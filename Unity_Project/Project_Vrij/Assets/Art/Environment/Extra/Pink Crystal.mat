@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material 1
+  m_Name: Pink Crystal
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
   m_LightmapFlags: 2
@@ -78,6 +78,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 0.30980393, g: 0.78858316, b: 0.83137256, a: 1}
-    - _EmissionColor: {r: 0.11764705, g: 1, b: 0.98306656, a: 1}
+    - _Color: {r: 0.9622642, g: 0.38581347, b: 0.6635203, a: 1}
+    - _EmissionColor: {r: 1, g: 0.08018869, b: 0.7035843, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
