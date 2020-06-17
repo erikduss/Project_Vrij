@@ -162,8 +162,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             m_CollisionFlags = m_CharacterController.Move(m_MoveDir*Time.fixedDeltaTime);
 
-            ProgressStepCycle(speed);
-            UpdateCameraPosition(speed);
+            ProgressStepCycle(normspeed);
+            UpdateCameraPosition(normspeed);
 
             m_MouseLook.UpdateCursorLock();
         }
@@ -215,6 +215,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void UpdateCameraPosition(float speed)
         {
+            //if(speed > 7)
+            //{
+            //    normspeed = 7;
+            //}
+            //else
+            //{
+            //    normspeed = speed;
+            //}
+
+
             Vector3 newCameraPosition;
             if (!m_UseHeadBob)
             {

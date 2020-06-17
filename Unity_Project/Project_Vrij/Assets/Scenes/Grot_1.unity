@@ -14759,6 +14759,16 @@ PrefabInstance:
       propertyPath: pickupText
       value: 
       objectReference: {fileID: 1189277598}
+    - target: {fileID: 8977661918252875239, guid: a64486e72f4814c9b840bb395cd1b15c,
+        type: 3}
+      propertyPath: m_WalkSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8977661918252875239, guid: a64486e72f4814c9b840bb395cd1b15c,
+        type: 3}
+      propertyPath: normspeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8977661918263661607, guid: a64486e72f4814c9b840bb395cd1b15c,
         type: 3}
       propertyPath: m_LocalPosition.x
