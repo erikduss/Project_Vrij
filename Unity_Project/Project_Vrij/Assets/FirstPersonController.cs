@@ -53,7 +53,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         public Text pickupText;
         private bool canPickUp = false;
-        private bool finishedVoiceLines = false;
+        [SerializeField]private bool finishedVoiceLines = false;
 
         public bool endDemo = false;
 
