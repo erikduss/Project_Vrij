@@ -14,6 +14,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private string sceneToLoad;
 
     [SerializeField] private Image playButton;
+    [SerializeField]private Text playText;
 
     [SerializeField] private PickAndPlayVideo _ppv;
 
@@ -36,6 +37,8 @@ public class Menu : MonoBehaviour
         //StartCoroutine(FadePanel());
 
         yield return new WaitForSeconds(0);
+        playText.enabled = false;
+        playButton.enabled = false;
         _ppv.PlayVideo();
     }
 

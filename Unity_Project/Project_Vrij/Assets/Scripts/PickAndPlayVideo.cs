@@ -41,6 +41,9 @@ public class PickAndPlayVideo : MonoBehaviour
             StartCoroutine(FadePanel(sceneToLoad));
             yield return null;
         }else if (!stopAfter) {
+            if (orb == null)
+                StartCoroutine(FadePanel(sceneToLoad));
+            if(orb != null)
             StartCoroutine(PlayToLength(orb, 2, true));
         }
 
