@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
        //panelImage.color = fixedColor;
        //panelImage.CrossFadeAlpha(0, 0.0f, false);
 
-        soundManager.VoiceLinesLevel1End();
+        //soundManager.VoiceLinesLevel1End();
         ending = true;
     }
 
