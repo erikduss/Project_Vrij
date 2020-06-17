@@ -9,6 +9,18 @@ public class InventoryManager : MonoBehaviour
     private int maxOrbs = 3;
     private int orbsInInventory = 0;
 
+    void Awake()
+    {
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Inventory");
+
+        if (objs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
