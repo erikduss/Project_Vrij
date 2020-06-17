@@ -481,10 +481,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 120418822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a498fb02288644b47b8e2a7a1a6db648, type: 3}
+  m_Script: {fileID: 11500000, guid: 3720150ec3f6141cab3b662d3a27803b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelImage: {fileID: 1584363065}
+  fadePanel: {fileID: 1584363065}
 --- !u!4 &123468400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8628171235006342341, guid: ce1bb5d3fd1f71549aa30e2a267907df,
@@ -1676,11 +1676,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b57a60703bc488c8228add1563a48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startOn: 1
-  maxBrightness: 5
-  transitionTime: 7
-  peakDelay: 1
-  isLit: 0
+  startOn: 0
+  maxBrightness: 4
+  transitionTime: 1
+  peakDelay: 3
   light: {fileID: 301188436}
 --- !u!1001 &308417695
 PrefabInstance:
@@ -1958,10 +1957,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startOn: 1
-  maxBrightness: 10
-  transitionTime: 6
-  peakDelay: 7
-  isLit: 0
+  maxBrightness: 5
+  transitionTime: 2
+  peakDelay: 1
   light: {fileID: 319869020}
 --- !u!1 &332579091
 GameObject:
@@ -4609,11 +4607,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b57a60703bc488c8228add1563a48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startOn: 0
-  maxBrightness: 9
+  startOn: 1
+  maxBrightness: 7
   transitionTime: 5
-  peakDelay: 4
-  isLit: 0
+  peakDelay: 0
   light: {fileID: 752749330}
 --- !u!1 &758730039
 GameObject:
@@ -9096,10 +9093,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startOn: 0
-  maxBrightness: 7
-  transitionTime: 7
+  maxBrightness: 15
+  transitionTime: 8
   peakDelay: 2
-  isLit: 0
   light: {fileID: 1503389708}
 --- !u!1 &1506113760
 GameObject:
@@ -12179,10 +12175,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startOn: 1
-  maxBrightness: 9
-  transitionTime: 8
-  peakDelay: 3
-  isLit: 0
+  maxBrightness: 8
+  transitionTime: 4
+  peakDelay: 2
   light: {fileID: 1934329569}
 --- !u!4 &1937988711 stripped
 Transform:
