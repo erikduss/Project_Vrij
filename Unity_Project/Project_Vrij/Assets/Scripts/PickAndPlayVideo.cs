@@ -12,7 +12,10 @@ public class PickAndPlayVideo : MonoBehaviour
     public VideoClip orb;
     public VideoPlayer _vp;
 
+    public string sceneToLoad;
+
     [SerializeField] private Image fadePanel;
+
 
 
     public void PlayVideo()
@@ -28,14 +31,14 @@ public class PickAndPlayVideo : MonoBehaviour
         _vp.Play();
         yield return new WaitForSeconds((float)_vc.length / playbackSpeed);
         _vp.Stop();
+        //if (stopAfter)
+        //{
+        //    Debug.Log("stopping");
+        //    yield return null;
+        //}
         if (stopAfter)
         {
-            Debug.Log("stopping");
-            yield return null;
-        }
-        if (stopAfter)
-        {
-            StartCoroutine(FadePanel("Grot_2"));
+            StartCoroutine(FadePanel(sceneToLoad));
             yield return null;
         }else if (!stopAfter) {
             StartCoroutine(PlayToLength(orb, 2, true));

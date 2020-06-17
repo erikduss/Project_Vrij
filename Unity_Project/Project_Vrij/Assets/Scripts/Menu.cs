@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.Video;
 
 public class Menu : MonoBehaviour
-{ 
-[SerializeField]private Image fadePanel;
+{
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+[SerializeField]private Image fadePanel;
+    [SerializeField] private string sceneToLoad;
+
+    [SerializeField] private Image playButton;
+
+    [SerializeField] private PickAndPlayVideo _ppv;
+
+   
+
+
 
     // Update is called once per frame
     void Update()
@@ -26,9 +33,10 @@ public class Menu : MonoBehaviour
 
     private IEnumerator OnGameStart()
     {
-        StartCoroutine(FadePanel());
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("Grot_1");
+        //StartCoroutine(FadePanel());
+
+        yield return new WaitForSeconds(0);
+        _ppv.PlayVideo();
     }
 
     private IEnumerator FadePanel() {
