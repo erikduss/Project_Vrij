@@ -5550,6 +5550,17 @@ PrefabInstance:
       propertyPath: fadePanel
       value: 
       objectReference: {fileID: 1186057582}
+    - target: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: Grot_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: _vc
+      value: 
+      objectReference: {fileID: 32900000, guid: 572888ef44c074ea08382ffe11a6471f,
+        type: 3}
     - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
         type: 3}
       propertyPath: m_LocalPosition.x
