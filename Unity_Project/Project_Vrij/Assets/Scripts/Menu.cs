@@ -38,6 +38,7 @@ public class Menu : MonoBehaviour
 
             fadePanel.color = new Color(0, 0, 0, i);
             yield return null;
+            
         }
     }
 

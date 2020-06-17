@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
     {
         soundManager = this.gameObject.GetComponent<SoundManager>();
         storyProgress = -1;
-        panelImage = fadePanel.GetComponent<Image>();
-        fadePanel.SetActive(false);
+        //panelImage = fadePanel.GetComponent<Image>();
+        //fadePanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
         if (ending)
         {
-            panelImage.CrossFadeAlpha(1, 2.5f, false);
+            //panelImage.CrossFadeAlpha(1, 2.5f, false);
         }
     }
 
