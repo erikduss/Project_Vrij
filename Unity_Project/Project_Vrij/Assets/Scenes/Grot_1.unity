@@ -4530,7 +4530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196832ad50c6b427bb2dbaed61165ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vc: {fileID: 32900000, guid: e54b1ac16323e4368ac7c34ddbe765a5, type: 3}
+  _vc: {fileID: 32900000, guid: 9eb524d57ff2443aaa826ab3d77f78f3, type: 3}
   orb: {fileID: 32900000, guid: e54b1ac16323e4368ac7c34ddbe765a5, type: 3}
   _vp: {fileID: 679862323}
   fadePanel: {fileID: 772214261}
@@ -7131,6 +7131,63 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1048330843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1048330846}
+  - component: {fileID: 1048330845}
+  - component: {fileID: 1048330844}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1048330844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048330843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 513d2714ea8c94704aa3550fe893b123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1048330845
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048330843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1048330846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048330843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.1, y: 5.9, z: 16.345}
+  m_LocalScale: {x: 1, y: 4.9755, z: 14.397532}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1050475706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9856,10 +9913,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ee87433cfde0ac24abe2a99227992848, type: 3}
   - {fileID: 8300000, guid: 31ba6a9baf9ae32418b429eb0e182d89, type: 3}
   - {fileID: 8300000, guid: 9c95b18ee0dd12946ab5786d70cc7fa6, type: 3}
-  - {fileID: 8300000, guid: 2df87ba5a553a754a8f7b3caab854698, type: 3}
-  - {fileID: 8300000, guid: fbefb4e98413c0d4d9b8cd9f33758a65, type: 3}
-  - {fileID: 8300000, guid: 655d828e1c0c46d4da25268fe4fa07c2, type: 3}
-  - {fileID: 8300000, guid: 317e5c1f86e8daa4fbb91e41679f8cbb, type: 3}
   nerrativeAudio: {fileID: 1874601192}
   nerrativeBlockers:
   - {fileID: 1734037082}

@@ -294,7 +294,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private IEnumerator pickUpDelay()
         {
             finishedVoiceLines = false;
-            yield return new WaitForSeconds(30);
+            yield return new WaitForSeconds(10);
             finishedVoiceLines = true;
         }
 

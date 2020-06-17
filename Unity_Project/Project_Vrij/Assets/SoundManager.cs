@@ -29,6 +29,7 @@ public class SoundManager : MonoBehaviour
     {
         nerrativeAudio.PlayOneShot(Level_1_Voice_Lines[currentVoiceLine]);
         currentVoiceLine++;
+
     }
 
     #region Level 1 Part 1
@@ -57,18 +58,18 @@ public class SoundManager : MonoBehaviour
         StartCoroutine(deactivateBlocker(0));
         if (part4)
         {
-            yield return new WaitForSeconds(7);
-            nerrativeAudio.PlayOneShot(Level_1_Voice_Lines[currentVoiceLine]);
-            currentVoiceLine++;
-            yield return new WaitForSeconds(3);
-            nerrativeAudio.PlayOneShot(Level_1_Voice_Lines[currentVoiceLine]);
-            currentVoiceLine++;
-            yield return new WaitForSeconds(3);
-            nerrativeAudio.PlayOneShot(Level_1_Voice_Lines[currentVoiceLine]);
-            currentVoiceLine++;
-            yield return new WaitForSeconds(4);
-            nerrativeAudio.PlayOneShot(Level_1_Voice_Lines[currentVoiceLine]);
-            currentVoiceLine++;
+            //yield return new WaitForSeconds(7);
+            //nerrativeAudio.PlayOneShot(Level_1_Voice_Lines[currentVoiceLine]);
+            //currentVoiceLine++;
+            //yield return new WaitForSeconds(3);
+            //nerrativeAudio.PlayOneShot(Level_1_Voice_Lines[currentVoiceLine]);
+            //currentVoiceLine++;
+            //yield return new WaitForSeconds(3);
+            //nerrativeAudio.PlayOneShot(Level_1_Voice_Lines[currentVoiceLine]);
+            //currentVoiceLine++;
+            //yield return new WaitForSeconds(4);
+            //nerrativeAudio.PlayOneShot(Level_1_Voice_Lines[currentVoiceLine]);
+            //currentVoiceLine++;
         }
     }
     #endregion
