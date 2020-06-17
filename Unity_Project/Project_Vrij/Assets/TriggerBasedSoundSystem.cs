@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class TriggerBasedSoundSystem : MonoBehaviour
 {
+    public AudioSource narrativeAudio;
+    public AudioClip audioToPlay;
     // Start is called before the first frame update
-    void Start()
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if(other.tag == "Player")
+        {
+            narrativeAudio.clip = audioToPlay;
+            narrativeAudio.Play();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
