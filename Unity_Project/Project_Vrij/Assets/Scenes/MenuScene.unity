@@ -3509,6 +3509,108 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5830171394363673609, guid: fc69da6e253eb1d41acb0d70ded5b349, type: 3}
+--- !u!1001 &548702039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 992329482062886864, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 120418824}
+    - target: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: fadePanel
+      value: 
+      objectReference: {fileID: 938735281}
+    - target: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: _vc
+      value: 
+      objectReference: {fileID: 32900000, guid: e723f2c85bebf47dfa8962c662ef6557,
+        type: 3}
+    - target: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: Grot_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.848049
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7763968
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.369888
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 992329483968749930, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_Name
+      value: Video
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 099f9f069b56645d58bb823c63faa627, type: 3}
+--- !u!114 &548702040 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
+    type: 3}
+  m_PrefabInstance: {fileID: 548702039}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196832ad50c6b427bb2dbaed61165ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &576523943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4849,6 +4951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadePanel: {fileID: 938735281}
+  sceneToLoad: Grot_1
+  _ppv: {fileID: 548702040}
 --- !u!114 &799474139
 MonoBehaviour:
   m_ObjectHideFlags: 0
