@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Grot_2.unity
     guid: 505611ffccb01044aa459f9eb5e28593
+  - enabled: 1
+    path: Assets/Scenes/Grot_3.unity
+    guid: ae6cc20cab34ad64c8f6528e41b0a160
+  - enabled: 1
+    path: Assets/Scenes/Grot_4.unity
+    guid: 2b5ca59fc9b76cc4385af47c1af508e0
   m_configObjects: {}

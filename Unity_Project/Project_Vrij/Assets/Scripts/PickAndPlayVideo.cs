@@ -29,6 +29,7 @@ public class PickAndPlayVideo : MonoBehaviour
         _vp.playbackSpeed = playbackSpeed;
         _vp.clip = clip;
         _vp.Play();
+        Debug.Log((float)_vc.length / playbackSpeed);
         yield return new WaitForSeconds((float)_vc.length / playbackSpeed);
         _vp.Stop();
         //if (stopAfter)
@@ -45,6 +46,7 @@ public class PickAndPlayVideo : MonoBehaviour
                 StartCoroutine(FadePanel(sceneToLoad));
             if(orb != null)
             StartCoroutine(PlayToLength(orb, 2, true));
+            Debug.Log("3");
         }
 
         //plays orb animation and stops
