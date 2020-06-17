@@ -42,11 +42,11 @@ public class GameManager : MonoBehaviour
 
     public void EndDemo()
     {
-        fadePanel.SetActive(true);
-        Color fixedColor = panelImage.color;
-        fixedColor.a = 1;
-        panelImage.color = fixedColor;
-        panelImage.CrossFadeAlpha(0, 0.0f, false);
+        //fadePanel.SetActive(true);
+        //Color fixedColor = panelImage.color;
+       // fixedColor.a = 1;
+       //panelImage.color = fixedColor;
+       //panelImage.CrossFadeAlpha(0, 0.0f, false);
 
         soundManager.VoiceLinesLevel1End();
         ending = true;
