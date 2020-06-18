@@ -7,8 +7,15 @@ public class InventorySystemAran : MonoBehaviour
 {
     private bool canGrab = false;
     private GameObject grabableOrb;
+
+    //variabele voor de ui allemaal op size 4 zetten
+    // inventoryslot uit het canvas in volgorde en als laatste NewOrb
     public List<GameObject> InventoryButtons;
+
+    // Image die onder Inventoryslot en neworb zitten in volgorde met iamgeNewOrb als laatste
     public List<Image> UIOrbImage;
+
+    // Description van de orbs in het canvas, van boven naar beneden in de hierarchy    
     public List<Text> OrbDescription;
 
     // Start is called before the first frame update
@@ -83,6 +90,7 @@ public class InventorySystemAran : MonoBehaviour
         HideUI();
     }
 
+    //Vervangt de 2e orb voor de nieuw opgepakte orb wanneer deze knop ingedrukt word
     public void discardOrb3()
     {
         CurrentOrbs.Orb3Image = grabableOrb.GetComponent<OrbInfo>().orbSprite;
@@ -110,7 +118,8 @@ public class InventorySystemAran : MonoBehaviour
         OrbDescription[1].text = CurrentOrbs.InventoryOrb2.GetComponent<OrbInfo>().orbDescription;
         OrbDescription[2].text = CurrentOrbs.InventoryOrb3.GetComponent<OrbInfo>().orbDescription;
         OrbDescription[3].text = grabableOrb.GetComponent<OrbInfo>().orbDescription;*/
-
+        
+        //check de opgeslagen variabelen om de ui icons en text te updaten
         UIOrbImage[0].sprite = CurrentOrbs.Orb1Image;
         UIOrbImage[1].sprite = CurrentOrbs.Orb2Image;
         UIOrbImage[2].sprite = CurrentOrbs.Orb3Image;
