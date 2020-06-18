@@ -24,6 +24,46 @@ public class PickAndPlayVideo : MonoBehaviour
       
     }
 
+    public void NextScene()
+    {
+        StartCoroutine(FadePanel(sceneToLoad));
+
+    }
+
+    public void NormalVideo(bool _continue) 
+    {
+        StartCoroutine(PlayCaveVideo(_continue));
+    }
+
+    public void OrbVideo(bool _continue)
+    {
+        StartCoroutine(PlayOrbVideo(_continue));
+    }
+
+
+    public IEnumerator PlayCaveVideo(bool _continue)
+    {
+        _vp.clip = _vc;
+        _vp.Play();
+        yield return new WaitForSeconds((float)_vp.clip.length);
+        //
+        _vp.Stop();
+        if(_continue)
+            StartCoroutine(PlayToLength(orb, 1, true));
+    }
+
+    public IEnumerator PlayOrbVideo(bool _continue)
+    {
+        _vp.clip = orb;
+        _vp.Play();
+        yield return new WaitForSeconds((float)_vp.clip.length);
+        //
+        _vp.Stop();
+        if (_continue)
+            StartCoroutine(FadePanel(sceneToLoad));
+
+    }
+
     private IEnumerator PlayToLength(VideoClip clip, float playbackSpeed, bool stopAfter)
     {
         _vp.playbackSpeed = playbackSpeed;

@@ -88,7 +88,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 endDemo = true;
                 pickupText.enabled = false;
-                _ppv.PlayVideo();
+               // _ppv.PlayVideo();
                 gameManager.EndDemo();
             }
             RotateView();
