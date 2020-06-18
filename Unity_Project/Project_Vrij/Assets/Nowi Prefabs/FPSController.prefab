@@ -197,9 +197,9 @@ GameObject:
   - component: {fileID: 7127459383412721187}
   - component: {fileID: 7127459383416139715}
   - component: {fileID: 7127459383423594467}
+  - component: {fileID: 7100326073473107896}
   - component: {fileID: 7127459383407245667}
   - component: {fileID: 7127459383409902563}
-  - component: {fileID: 1263025236000231509}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -256,6 +256,7 @@ MonoBehaviour:
   m_IsWalking: 0
   m_WalkSpeed: 5
   m_RunSpeed: 10
+  normspeed: 7
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 10
   m_StickToGroundForce: 10
@@ -367,7 +368,35 @@ MonoBehaviour:
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
   _ppv: {fileID: 0}
   pickupText: {fileID: 0}
+  finishedVoiceLines: 0
   endDemo: 0
+--- !u!114 &7100326073473107896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7127459383412300291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c174ce6fb9ebc499db0713764198e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  UIOrbImage:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  OrbDescription:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!54 &7127459383407245667
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -480,30 +509,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &1263025236000231509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7127459383412300291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5c174ce6fb9ebc499db0713764198e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InventoryButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  UIOrbImage:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  OrbDescription:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}

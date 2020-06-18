@@ -52,6 +52,15 @@ public class InventorySystemAran : MonoBehaviour
                 UpdateShowUI();
             }
         }
+
+        if (Input.GetKeyDown("r"))
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
+            {
+                Debug.Log(hit.collider.gameObject.name);
+            }
+        }
         
     }
 
@@ -136,12 +145,11 @@ public class InventorySystemAran : MonoBehaviour
         OrbDescription[2].text = CurrentOrbs.orbText3.ToString();
         OrbDescription[3].text = grabableOrb.GetComponent<OrbInfo>().orbDescription.ToString();
 
-
+        Cursor.visible = true;
         foreach (GameObject Button in InventoryButtons)
         {
             Button.SetActive(true);
-            Cursor.visible = true;
-        }
+            }
         Debug.Log(CurrentOrbs.orbText1);
     }
 }
