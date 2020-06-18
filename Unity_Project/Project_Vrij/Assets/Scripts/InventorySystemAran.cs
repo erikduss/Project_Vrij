@@ -8,7 +8,7 @@ public class InventorySystemAran : MonoBehaviour
     private bool canGrab = false;
     private GameObject grabableOrb;
 
-    //variabele voor de ui allemaal op size 4 zetten
+    //variabele voor de ui allemaal op size 4 zetten deze zijn belangrijkst
     // inventoryslot uit het canvas in volgorde en als laatste NewOrb
     public List<GameObject> InventoryButtons;
 
@@ -27,6 +27,7 @@ public class InventorySystemAran : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // kijkt eerst of er lege slots zijn pas bij 3 gevulde slots word de inventory geopend
         if (Input.GetKeyDown("e") && canGrab)
         {
             Debug.Log("knop werkt");
@@ -96,6 +97,11 @@ public class InventorySystemAran : MonoBehaviour
         CurrentOrbs.Orb3Image = grabableOrb.GetComponent<OrbInfo>().orbSprite;
         CurrentOrbs.orbText3 = grabableOrb.GetComponent<OrbInfo>().orbDescription;
         Cursor.visible = false;
+        HideUI();
+    }
+
+    public void DiscardNewOrb()
+    {
         HideUI();
     }
 
