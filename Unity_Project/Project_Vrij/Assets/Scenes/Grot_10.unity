@@ -994,6 +994,11 @@ PrefabInstance:
       propertyPath: UIOrbImage.Array.data[0]
       value: 
       objectReference: {fileID: 864875560}
+    - target: {fileID: 7100326073473107896, guid: dc3b2c3031d8f454ea8ab6f205c69015,
+        type: 3}
+      propertyPath: _ppv
+      value: 
+      objectReference: {fileID: 1841512476}
     - target: {fileID: 7127459383412300291, guid: dc3b2c3031d8f454ea8ab6f205c69015,
         type: 3}
       propertyPath: m_Name
@@ -1087,6 +1092,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5c174ce6fb9ebc499db0713764198e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &530878245 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7127459383423594467, guid: dc3b2c3031d8f454ea8ab6f205c69015,
+    type: 3}
+  m_PrefabInstance: {fileID: 530878242}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &537994091
@@ -1983,6 +2000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088090627685459571, guid: 9af15bac640b7bb46b7211cb146b3966,
+        type: 3}
+      propertyPath: m_TagString
+      value: FadePanel
       objectReference: {fileID: 0}
     - target: {fileID: 6266977755213328690, guid: 9af15bac640b7bb46b7211cb146b3966,
         type: 3}
@@ -4180,6 +4202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: orb
       objectReference: {fileID: 0}
+    - target: {fileID: 3751518422335164194, guid: 4f686ebbe3caf5a40a1cb3d201285cf2,
+        type: 3}
+      propertyPath: m_TagString
+      value: orb
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f686ebbe3caf5a40a1cb3d201285cf2, type: 3}
 --- !u!1 &1685854984 stripped
@@ -4525,6 +4552,11 @@ PrefabInstance:
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 530878243}
+    - target: {fileID: 992329482062886864, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_PlaybackSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
         type: 3}
       propertyPath: fadePanel
@@ -4547,6 +4579,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 32900000, guid: c8dc8f78c95b94397b2c76d4136ddda7,
         type: 3}
+    - target: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: _is
+      value: 
+      objectReference: {fileID: 530878244}
+    - target: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: _fpc
+      value: 
+      objectReference: {fileID: 530878245}
     - target: {fileID: 992329483968749929, guid: 099f9f069b56645d58bb823c63faa627,
         type: 3}
       propertyPath: m_LocalPosition.x

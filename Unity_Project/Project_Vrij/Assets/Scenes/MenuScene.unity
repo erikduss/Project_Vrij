@@ -3526,6 +3526,11 @@ PrefabInstance:
       propertyPath: m_AspectRatio
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 992329482062886864, guid: 099f9f069b56645d58bb823c63faa627,
+        type: 3}
+      propertyPath: m_PlaybackSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 992329482101750372, guid: 099f9f069b56645d58bb823c63faa627,
         type: 3}
       propertyPath: fadePanel

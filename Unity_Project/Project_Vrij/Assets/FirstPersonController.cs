@@ -36,6 +36,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         [SerializeField] private PickAndPlayVideo _ppv;
 
+
+
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -86,9 +88,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if(canPickUp && Input.GetKeyDown(KeyCode.E))
             {
-                endDemo = true;
+                //endDemo = true;
                 pickupText.enabled = false;
-               // _ppv.PlayVideo();
+                _ppv.NormalVideo(false);
+                canPickUp = false;
                 gameManager.EndDemo();
             }
             RotateView();
