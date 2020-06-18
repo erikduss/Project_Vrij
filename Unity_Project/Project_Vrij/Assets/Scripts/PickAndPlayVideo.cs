@@ -45,7 +45,7 @@ public class PickAndPlayVideo : MonoBehaviour
             if (orb == null)
                 StartCoroutine(FadePanel(sceneToLoad));
             if(orb != null)
-            StartCoroutine(PlayToLength(orb, 2, true));
+            StartCoroutine(PlayToLength(orb, 1, true));
             Debug.Log("3");
         }
 
