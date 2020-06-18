@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class InventorySystemAran : MonoBehaviour
 {
+    [SerializeField] private PickAndPlayVideo _ppv;
+
     private bool canGrab = false;
     private GameObject grabableOrb;
 
@@ -81,6 +83,7 @@ public class InventorySystemAran : MonoBehaviour
         CurrentOrbs.orbText1 = grabableOrb.GetComponent<OrbInfo>().orbDescription;
         Cursor.visible = false;
         HideUI();
+        _ppv.PlayVideo();
     }
 
     public void discardOrb2()
@@ -89,6 +92,7 @@ public class InventorySystemAran : MonoBehaviour
         CurrentOrbs.orbText2 = grabableOrb.GetComponent<OrbInfo>().orbDescription;
         Cursor.visible = false;
         HideUI();
+        _ppv.PlayVideo();
     }
 
     //Vervangt de 2e orb voor de nieuw opgepakte orb wanneer deze knop ingedrukt word
@@ -98,11 +102,13 @@ public class InventorySystemAran : MonoBehaviour
         CurrentOrbs.orbText3 = grabableOrb.GetComponent<OrbInfo>().orbDescription;
         Cursor.visible = false;
         HideUI();
+        _ppv.PlayVideo();
     }
 
     public void DiscardNewOrb()
     {
         HideUI();
+        _ppv.NextScene();
     }
 
     private void HideUI()
