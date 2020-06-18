@@ -47,6 +47,9 @@ public class PickAndPlayVideo : MonoBehaviour
         _vp.Play();
         yield return new WaitForSeconds((float)_vp.clip.length);
         //
+        _vp.Stop();
+        if(_continue)
+            StartCoroutine(PlayToLength(orb, 1, true));
     }
 
     public IEnumerator PlayOrbVideo(bool _continue)
@@ -56,6 +59,8 @@ public class PickAndPlayVideo : MonoBehaviour
         yield return new WaitForSeconds((float)_vp.clip.length);
         //
         _vp.Stop();
+        if (_continue)
+            StartCoroutine(FadePanel(sceneToLoad));
 
     }
 
